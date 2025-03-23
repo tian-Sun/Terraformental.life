@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景圆形 -->
+    <circle cx="100" cy="100" r="90" fill="#4a90e2"/>
+    
+    <!-- 字母T -->
+    <text x="100" y="130" 
+          font-family="Arial Black, sans-serif" 
+          font-size="120" 
+          fill="white" 
+          text-anchor="middle">
+        T
+    </text>
+    
+    <!-- 装饰环 -->
+    <circle cx="100" cy="100" r="85" 
+            stroke="white" 
+            stroke-width="2" 
+            fill="none" 
+            opacity="0.3"/>
+</svg> 

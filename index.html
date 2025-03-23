@@ -3,136 +3,361 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terraformental - An Epic Adventure Game | Terraformental.life</title>
-    <meta name="description" content="Embark on an extraordinary journey in Terraformental, where strategy meets adventure in this immersive online game. Experience the thrill of exploration and conquest.">
+    <title>Terraformental.life - Best Browser Games</title>
+    <meta name="description" content="Play the best browser games online. Featuring click games, shooting games, puzzle games, and adventure games.">
     <link rel="canonical" href="https://terraformental.life">
-    <!-- Google tag (gtag.js) -->
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./images/logo.svg">
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0EZNJBZNGX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-0EZNJBZNGX');
     </script>
+
+    <!-- Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f5f5f7;
-        }
-        .game-container {
-            aspect-ratio: 16/9;
-            width: 100%;
-            max-height: 80vh;
-            position: relative;
-        }
-        .fullscreen-btn {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            z-index: 10;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-weight: 500;
-        }
-        .fullscreen-btn:hover {
-            background-color: rgba(0, 0, 0, 0.7);
-            transform: scale(1.05);
-        }
-        .game-iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 0.5rem;
-            background-color: #000;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="min-h-screen">
-    <header class="bg-white shadow-sm">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div class="flex justify-between items-center">
-                <h1 class="text-3xl font-bold text-gray-900">Terraformental</h1>
+<body class="min-h-screen bg-gray-100">
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="container mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <a href="./" class="flex items-center gap-2">
+                    <img src="./images/logo.svg" alt="Terraformental.life" class="h-8 w-8">
+                    <span class="text-xl font-bold">Terraformental.life</span>
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://ko-fi.com/chinatravel" target="_blank" class="btn-primary flex items-center gap-2">
+                    <i class="fas fa-coffee"></i>
+                    <span class="hidden sm:inline">Support Us</span>
+                </a>
             </div>
         </nav>
     </header>
 
-    <main class="w-full">
-        <div class="game-section bg-black w-full mb-8">
-            <div class="game-container mx-auto relative">
-                <button class="fullscreen-btn" onclick="toggleFullscreen()">
-                    <i class="fas fa-expand"></i> Fullscreen
-                </button>
-                <iframe 
-                    id="game-frame"
-                    src="https://html-classic.itch.zone/html/13107880/index.html" 
-                    class="game-iframe"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pt-24">
+        <!-- Recently Updated Games -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6">Recently Updated</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="./games/click/terraformental.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-gray-900 to-gray-700"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Terraformental</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 16.6kh</span>
+                                <span><i class="fas fa-heart"></i> 422</span>
+                                <span class="ml-auto">4.7 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-        </div>
+        </section>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-4">About the Game</h2>
-                <p class="text-gray-600 mb-4">
-                    Terraformental is an immersive strategy adventure game that challenges players to explore, conquer, and build in a dynamic world. With its unique blend of resource management and tactical gameplay, it offers an engaging experience for both casual and hardcore gamers.
-                </p>
+        <!-- Click Games -->
+        <section class="mb-12">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold">Click Games</h2>
+                <a href="./categories/click" class="text-blue-600 hover:text-blue-800">View All <i class="fas fa-arrow-right ml-1"></i></a>
             </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="./games/click/cookie-clicker.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-amber-600 to-amber-800"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Cookie Clicker</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 25.3kh</span>
+                                <span><i class="fas fa-heart"></i> 521</span>
+                                <span class="ml-auto">4.8 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./games/click/idle-miner.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-yellow-600 to-yellow-800"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Idle Miner</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 18.7kh</span>
+                                <span><i class="fas fa-heart"></i> 342</span>
+                                <span class="ml-auto">4.5 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./games/click/farm-empire.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-green-600 to-green-800"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Farm Empire</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 15.4kh</span>
+                                <span><i class="fas fa-heart"></i> 287</span>
+                                <span class="ml-auto">4.3 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./games/click/space-colony.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-purple-600 to-purple-800"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Space Colony</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 12.8kh</span>
+                                <span><i class="fas fa-heart"></i> 245</span>
+                                <span class="ml-auto">4.2 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
 
-            <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
-                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Game Features</h2>
-                <ul class="list-disc list-inside text-gray-600 space-y-2">
-                    <li>Strategic resource management</li>
-                    <li>Dynamic world exploration</li>
-                    <li>Engaging combat system</li>
-                    <li>Beautiful visual design</li>
-                    <li>Regular updates and new content</li>
-                </ul>
+        <!-- Shooting Games -->
+        <section class="mb-12">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold">Shooting Games</h2>
+                <a href="./categories/shoot" class="text-blue-600 hover:text-blue-800">View All <i class="fas fa-arrow-right ml-1"></i></a>
             </div>
-        </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="./games/shoot/pixel-warfare.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-red-600 to-red-800"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Pixel Warfare</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 32.1kh</span>
+                                <span><i class="fas fa-heart"></i> 612</span>
+                                <span class="ml-auto">4.6 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./games/shoot/space-defense.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-blue-600 to-blue-800"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Space Defense</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 28.4kh</span>
+                                <span><i class="fas fa-heart"></i> 534</span>
+                                <span class="ml-auto">4.5 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./games/shoot/zombie-survival.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-green-700 to-green-900"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Zombie Survival</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 24.6kh</span>
+                                <span><i class="fas fa-heart"></i> 478</span>
+                                <span class="ml-auto">4.4 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./games/shoot/tank-battle.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-gray-600 to-gray-800"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Tank Battle</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 21.3kh</span>
+                                <span><i class="fas fa-heart"></i> 423</span>
+                                <span class="ml-auto">4.3 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Puzzle Games -->
+        <section class="mb-12">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold">Puzzle Games</h2>
+                <a href="./categories/puzzle" class="text-blue-600 hover:text-blue-800">View All <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="./games/puzzle/color-match.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-pink-500 to-purple-600"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Color Match</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 19.8kh</span>
+                                <span><i class="fas fa-heart"></i> 387</span>
+                                <span class="ml-auto">4.4 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./games/puzzle/number-logic.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-blue-500 to-indigo-600"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Number Logic</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 16.5kh</span>
+                                <span><i class="fas fa-heart"></i> 312</span>
+                                <span class="ml-auto">4.3 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./games/puzzle/word-master.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-green-500 to-teal-600"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Word Master</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 14.2kh</span>
+                                <span><i class="fas fa-heart"></i> 276</span>
+                                <span class="ml-auto">4.2 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./games/puzzle/memory-tiles.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-yellow-500 to-orange-600"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Memory Tiles</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 12.7kh</span>
+                                <span><i class="fas fa-heart"></i> 245</span>
+                                <span class="ml-auto">4.1 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Adventure Games -->
+        <section class="mb-12">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold">Adventure Games</h2>
+                <a href="./categories/adventure" class="text-blue-600 hover:text-blue-800">View All <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="./games/adventure/dungeon-explorer.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-purple-800 to-indigo-900"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Dungeon Explorer</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 27.4kh</span>
+                                <span><i class="fas fa-heart"></i> 523</span>
+                                <span class="ml-auto">4.6 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./games/adventure/pirate-quest.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-blue-800 to-blue-900"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Pirate Quest</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 23.8kh</span>
+                                <span><i class="fas fa-heart"></i> 456</span>
+                                <span class="ml-auto">4.5 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./games/adventure/forest-mystery.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-green-800 to-green-900"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Forest Mystery</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 20.2kh</span>
+                                <span><i class="fas fa-heart"></i> 389</span>
+                                <span class="ml-auto">4.4 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./games/adventure/time-traveler.html" class="game-card">
+                    <div class="relative">
+                        <div class="w-full h-48 bg-gradient-to-br from-amber-700 to-amber-900"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                            <h3 class="text-white font-semibold">Time Traveler</h3>
+                            <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                <span><i class="fas fa-user"></i> 17.6kh</span>
+                                <span><i class="fas fa-heart"></i> 342</span>
+                                <span class="ml-auto">4.3 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-white border-t mt-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <p class="text-center text-gray-500 text-sm">
-                © 2024 Terraformental.life. All rights reserved.
-            </p>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                    <p class="text-gray-600">Terraformental.life is your gateway to the best browser games. We carefully curate and host games that provide endless entertainment.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./about.html" class="text-gray-600 hover:text-gray-900">About Us</a></li>
+                        <li><a href="./contact.html" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+                        <li><a href="./privacy.html" class="text-gray-600 hover:text-gray-900">Privacy Policy</a></li>
+                        <li><a href="./terms.html" class="text-gray-600 hover:text-gray-900">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Categories</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./categories/click" class="text-gray-600 hover:text-gray-900">Click Games</a></li>
+                        <li><a href="./categories/shoot" class="text-gray-600 hover:text-gray-900">Shooting Games</a></li>
+                        <li><a href="./categories/puzzle" class="text-gray-600 hover:text-gray-900">Puzzle Games</a></li>
+                        <li><a href="./categories/adventure" class="text-gray-600 hover:text-gray-900">Adventure Games</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-200 text-center">
+                <p class="text-gray-600">&copy; 2024 Terraformental.life. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        function toggleFullscreen() {
-            const iframe = document.getElementById('game-frame');
-            if (!document.fullscreenElement) {
-                if (iframe.requestFullscreen) {
-                    iframe.requestFullscreen();
-                } else if (iframe.webkitRequestFullscreen) {
-                    iframe.webkitRequestFullscreen();
-                } else if (iframe.msRequestFullscreen) {
-                    iframe.msRequestFullscreen();
-                }
-            } else {
-                if (document.exitFullscreen) {
-                    document.exitFullscreen();
-                } else if (document.webkitExitFullscreen) {
-                    document.webkitExitFullscreen();
-                } else if (document.msExitFullscreen) {
-                    document.msExitFullscreen();
-                }
-            }
-        }
-    </script>
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
 </body>
 </html> 
