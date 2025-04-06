@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The founders of [redacted] - Terraformental.life</title>
+    <meta name="description" content="Play The founders of [redacted], a pixel-art point & click adventure game where you play as Ines, an aspiring writer who finds herself in a mysteriously empty town.">
+    <link rel="canonical" href="https://terraformental.life/games/adventure/the-founders-of-redacted">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../../images/logo.svg">
+    <link rel="icon" type="image/png" href="../../images/logo.png">
+    
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="min-h-screen bg-gray-100">
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="container mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <a href="../../" class="flex items-center gap-2">
+                    <img src="../../images/logo.svg" alt="Terraformental.life" class="h-8 w-8">
+                    <span class="text-xl font-bold">Terraformental.life</span>
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://ko-fi.com/chinatravel" target="_blank" class="btn-primary bg-blue-600 hover:bg-blue-700 text-white flex items-center gap-2">
+                    <i class="fas fa-coffee"></i>
+                    <span class="hidden sm:inline">Support Us</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pt-24">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <!-- Game Header -->
+            <div class="flex flex-col lg:flex-row gap-8 mb-8">
+                <div class="w-full lg:w-4/5">
+                    <div class="game-container relative rounded-lg overflow-hidden bg-gray-900" style="min-height: 80vh;">
+                        <iframe src="https://html-classic.itch.zone/html/11079522-1088778/index.html" 
+                               id="game-iframe"
+                               class="game-iframe absolute inset-0 w-full h-full" 
+                               style="border: none;"
+                               allowfullscreen></iframe>
+                        <button class="fullscreen-btn" onclick="toggleFullscreen(document.getElementById('game-iframe'))">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/5">
+                    <div class="bg-gray-50 rounded-lg p-6 sticky top-24">
+                        <h1 class="text-2xl font-bold mb-4">The founders of [redacted]</h1>
+                        <div class="flex items-center gap-4 text-sm text-gray-600 mb-6">
+                            <span><i class="fas fa-user"></i> 2.8k</span>
+                            <span><i class="fas fa-heart"></i> 924</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <div class="space-y-4">
+                            <button class="w-full btn-secondary bg-gray-200 hover:bg-gray-300 text-gray-800">
+                                <i class="fas fa-share mr-2"></i>Share Game
+                            </button>
+                            <a href="https://ko-fi.com/chinatravel" target="_blank" class="w-full btn-primary bg-blue-600 hover:bg-blue-700 text-white block text-center">
+                                <i class="fas fa-coffee mr-2"></i>Support Developer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Description -->
+            <div class="prose max-w-none">
+                <h2 class="text-xl font-bold mb-4">About The founders of [redacted]</h2>
+                <p class="mb-4">
+                    "The founders of [redacted]" is a pixel-art point & click adventure. It's the fourth installment in a series, following Uncle Lee strikes again, Once upon a Möbius strip, and Not enough time. Knowledge of the previous games is not required, as it is a standalone story.
+                </p>
+                <p class="mb-4">
+                    You play as Ines, a 19-year-old aspiring writer. Hoping to find peace and inspiration for her second novel, she's about to spend a few weeks in [redacted], her uncle Lee's hometown. On her arrival she finds a mysteriously empty town, and her book-writing plans are derailed as she is recruited to save [redacted] from a paranormal infestation.
+                </p>
+                
+                <h3 class="text-lg font-bold mb-3">Key Features</h3>
+                <ul class="list-disc pl-6 mb-6">
+                    <li>Beautiful pixel art graphics and animations</li>
+                    <li>Engaging story with humor and mystery</li>
+                    <li>Intuitive point & click gameplay</li>
+                    <li>Built-in hint system</li>
+                    <li>Save game functionality with autosave</li>
+                    <li>Multiple language support</li>
+                    <li>1-2 hours of gameplay</li>
+                </ul>
+
+                <h3 class="text-lg font-bold mb-3">How to Play</h3>
+                <ul class="list-disc pl-6 mb-6">
+                    <li>Mouse controls for point & click interaction</li>
+                    <li>Optional keyboard shortcuts available</li>
+                    <li>Touch controls supported for mobile devices</li>
+                    <li>Save your progress anytime outside dialogues</li>
+                    <li>Access hints after completing the first puzzle</li>
+                </ul>
+            </div>
+
+            <!-- Similar Games -->
+            <section class="mt-8">
+                <h2 class="text-2xl font-bold mb-6">Similar Games</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <a href="../adventure/bru-boegie.html" class="game-card">
+                        <div class="relative">
+                            <img src="../../images/games/BruBoegieEpisode1GetdaMILK.jpg" alt="Bru & Boegie: Get da MILK!" class="w-full aspect-[4/3] object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                                <h3 class="text-white font-semibold">Bru & Boegie: Get da MILK!</h3>
+                                <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                    <span><i class="fas fa-user"></i> 1.2k</span>
+                                    <span><i class="fas fa-heart"></i> 856</span>
+                                    <span class="ml-auto">4.9 <i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../adventure/dungeon-explorer.html" class="game-card">
+                        <div class="relative">
+                            <img src="../../images/games/dungeon-explorer.jpg" alt="Dungeon Explorer" class="w-full aspect-[4/3] object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                                <h3 class="text-white font-semibold">Dungeon Explorer</h3>
+                                <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                    <span><i class="fas fa-user"></i> 2.5k</span>
+                                    <span><i class="fas fa-heart"></i> 1.8k</span>
+                                    <span class="ml-auto">4.8 <i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../adventure/pirate-quest.html" class="game-card">
+                        <div class="relative">
+                            <img src="../../images/games/pirate-quest.jpg" alt="Pirate Quest" class="w-full aspect-[4/3] object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80">
+                                <h3 class="text-white font-semibold">Pirate Quest</h3>
+                                <div class="flex items-center gap-4 text-sm text-gray-300 mt-2">
+                                    <span><i class="fas fa-user"></i> 1.8k</span>
+                                    <span><i class="fas fa-heart"></i> 1.2k</span>
+                                    <span class="ml-auto">4.6 <i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                    <p class="text-gray-600">Terraformental.life is your gateway to the best browser games. We carefully curate and host games that provide endless entertainment.</p>
+                    <p class="text-gray-600 mt-2">Contact: wendy.1031ht@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../../about.html" class="text-gray-600 hover:text-gray-900">About Us</a></li>
+                        <li><a href="../../privacy.html" class="text-gray-600 hover:text-gray-900">Privacy Policy</a></li>
+                        <li><a href="../../terms.html" class="text-gray-600 hover:text-gray-900">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Categories</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../../categories/click/index.html" class="text-gray-600 hover:text-gray-900">Click Games</a></li>
+                        <li><a href="../../categories/shoot/index.html" class="text-gray-600 hover:text-gray-900">Shooting Games</a></li>
+                        <li><a href="../../categories/puzzle/index.html" class="text-gray-600 hover:text-gray-900">Puzzle Games</a></li>
+                        <li><a href="../../categories/adventure/index.html" class="text-gray-600 hover:text-gray-900">Adventure Games</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-200 text-center">
+                <p class="text-gray-600">&copy; 2024 Terraformental.life. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html> 
